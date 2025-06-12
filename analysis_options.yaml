@@ -1,0 +1,46 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude: [
+    build/**,
+    lib/**.freezed.dart,
+    lib/**.g.dart,
+    lib/**.graphql.dart,
+    lib/generated/**.dart,
+    #   lib/**model.dart
+  ]
+  strong-mode:
+    implicit-casts: false
+    declaration-casts: false
+    implicit-dynamic: false
+  errors:
+    cancel_subscriptions: error
+    throw_in_finally: error
+    always_declare_return_types: error
+    use_build_context_synchronously: ignore
+
+
+linter:
+  rules:
+    - prefer_single_quotes
+    - prefer_final_locals
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - always_use_package_imports
+    - sort_constructors_first
+    - avoid_void_async
+    - unawaited_futures
+    - avoid_private_typedef_functions
+    - prefer_final_in_for_each
+    - avoid_function_literals_in_foreach_calls
+    - cancel_subscriptions
+    - avoid_types_as_parameter_names
+    - prefer_void_to_null
+    - throw_in_finally
+    - await_only_futures
+    - prefer_final_fields
+    - unnecessary_await_in_return
+    - use_colored_box
+    - use_decorated_box
+    - use_named_constants
+    - use_rethrow_when_possible
